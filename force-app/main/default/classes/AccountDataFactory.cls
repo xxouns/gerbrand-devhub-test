@@ -21,8 +21,8 @@ public class AccountDataFactory extends DataFactory {
         this.setRecord(new Account (
             Name = 'Test Account',
             BillingStreet = 'Street',
-            BillingCity = 'London',
-            BillingPostalCode = 'MOSS'
+            BillingCity = 'Laren',
+            BillingPostalCode = 'Gen25'
         ));
         return this.getRecord();
     }
@@ -48,8 +48,8 @@ public class AccountDataFactory extends DataFactory {
             Account acc = (Account)this.build();
             acc.Name = name + i;
             acc.BillingStreet = 'Street' + i;
-            acc.BillingCity = 'London' + i;
-            acc.BillingPostalCode = 'Moss' + i;
+            acc.BillingCity = 'Laren' + i;
+            acc.BillingPostalCode = 'Gen25' + i;
             acc.Phone = '12345123' + i;
             lstAccounts.add(acc);
         }
